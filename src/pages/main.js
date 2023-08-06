@@ -13,9 +13,7 @@ const Main = () => {
     <>
       <div className="bg-main01 h-screen w-screen bg-cover max-h-[38rem] flex justify-center pt-20">
         <div className="flex w-full max-w-screen-lg text-white justify-end items-center flex-col">
-          <div className="text-5xl font-nomal mb-4 font-yd">
-            - 최대한{process.env.REACT_APP_API_URL} -
-          </div>
+          <div className="text-5xl font-nomal mb-4 font-yd">- 최대한 222-</div>
           <div className="text-5xl font-nomal font-yd">
             프론트 개발자 포트폴리오
           </div>
