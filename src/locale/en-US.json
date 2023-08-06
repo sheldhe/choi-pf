@@ -1,0 +1,11 @@
+{
+  "loginTitle": "Fevercoach Admin",
+  "loginEmail": "Email address",
+  "loginPasswod": "Password",
+  "loginRemember": " Remember me",
+  "loginForgetPassword": " Forgot your password?",
+  "loginbutton": "Sign in",
+  "info": "현재 언어는 {locale}입니다.",
+  "label": "언어",
+  "button": "저장"
+}

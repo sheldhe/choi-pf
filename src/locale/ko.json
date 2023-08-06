@@ -1,0 +1,143 @@
+{
+  "login.title": "열나요 관리자",
+  "shite.title": "열나요 관리자 페이지",
+  "login.email": "Email address",
+  "login.passwod": "Password",
+  "loginRemember": "아이디 기억하기",
+  "loginForgetPassword": " Forgot your password?",
+  "login.button": "로그인",
+  "info": "현재 언어는 {locale}입니다.",
+  "label": "언어",
+  "button": "저장",
+  "loading": "로딩중 .. ",
+
+  "header.menu.01": "서비스",
+  "header.menu.02": "App Push",
+  "header.menu.03": "데이터",
+  "header.menu.04": "광고",
+
+  "header.sub.menu.01": "계정설정",
+  "header.sub.menu.02": "로그아웃",
+
+  "leftmenu.01.0100": "공지사항 관리",
+  "leftmenu.01.0101": "공지사항 보기",
+  "leftmenu.01.0102": "공지사항 등록",
+  "leftmenu.01.0103": "공지사항 수정",
+
+  "leftmenu.01.0200": "FAQ 관리",
+  "leftmenu.01.0201": "FAQ 보기",
+  "leftmenu.01.0202": "FAQ 등록",
+  "leftmenu.01.0203": "FAQ 수정",
+
+  "leftmenu.01.0300": "고객응대 관리",
+  "leftmenu.01.0301": "문의글 보기",
+  "leftmenu.01.0302": "고객응대 등록",
+  "leftmenu.01.0303": "문의글 보기",
+
+  "board.search.button": "검색",
+  "board.write.button": "글 작성하기",
+  "notice.col.01": "No.",
+  "notice.col.02": "전체보기",
+  "notice.col.03": "제목",
+  "notice.col.04": "등록일",
+  "notice.col.05": "알람센터",
+  "notice.col.06": "푸시",
+  "notice.col.07": "수정일",
+  "notice.col.08": "메인등록",
+
+  "notice_write_type": "유형",
+  "notice_write_type_01": "공지사항",
+  "notice_write_type_02": "이벤트",
+  "notice_write_type_03": "정보",
+
+  "notice.write.type": "유형",
+  "notice.write.typeItems": ["NOTICE", "EVENT", "INFORMATION"],
+
+  "notice.write.title": "제목",
+  "notice.write.title.place": "제목을 입력해주세요.",
+  "notice.write.detail": "내용",
+  "notice.write.detail.place": "내용을 입력해주세요.",
+  "notice.write.alarm.title": "알람센터 등록",
+  "notice.write.main.title": "메인 등록",
+  "notice.write.push.title": "푸시발송",
+  "notice.write.button.update": "수정등록",
+  "notice.write.button.delete": "삭제",
+  "notice.write.button.write": "글 등록",
+  "notice.write.button.prev": "미리보기",
+
+  "notice.modal.delete.title": "게시글 삭제 안내",
+  "notice.modal.delete.detail": "해당 게시글을 삭제하시겠습니까 ?",
+
+  "notice.modal.delete.button.01": "취소",
+  "notice.modal.delete.button.02": "삭제",
+
+  "notice.modal.comple.title.01": "공지사항 수정 완료",
+  "notice.modal.comple.type.01": "공지사항",
+  "notice.modal.comple.detail.01": "게시글이 수정 되었습니다.",
+
+  "notice.modal.comple.button.01": "확인",
+  "notice.modal.comple.button.02": "수정",
+
+  "notice.modal.comple.title.02": "공지사항 삭제 완료",
+  "notice.modal.comple.type.02": "공지사항",
+  "notice.modal.comple.detail.02": "게시글을 삭제 하였습니다.",
+
+  "notice.modal.comple.title.03": "공지사항 작성 완료",
+  "notice.modal.comple.type.03": "공지사항",
+  "notice.modal.comple.detail.03": "게시글이 작성 되었습니다.",
+
+  "notice.modal.date.title": "푸시 발송 날짜 및 시간 설정",
+  "notice.modal.date.button.01": "발송 취소",
+  "notice.modal.date.button.02": "발송 설정",
+
+  "notice.modal.prev.title": "게시글 미리보기",
+  "notice.modal.prev.sub.01": "조회",
+  "notice.modal.prev.button.01": "확인",
+
+  "notice.alert.01": "제목을 입력해 주세요.",
+
+  "faq.write.type": "구분",
+  "faq.write.typeItems": ["FEVER_MANAGE", "CHANGE_INFO", "JOIN", "SETTING"],
+
+  "customer.col.01": "No.",
+  "customer.col.02": "회원ID",
+  "customer.col.03": "제목",
+  "customer.col.04": "문의일",
+  "customer.col.0501": "답변여부",
+  "customer.col.0502": "완료",
+  "customer.col.0503": "대기",
+  "customer.col.06": "답변일",
+
+  "customer.button.01": "전체 목록 보기",
+  "customer.button.02": "글목록 보기",
+  "customer.button.03": "답변수정",
+  "customer.button.04": "답변삭제",
+  "customer.button.05": "답변등록",
+  "customer.button.06": "수정완료",
+  "customer.button.07": "취소",
+
+  "customer.select.0101": "회원 ID",
+  "customer.select.0102": "제목",
+
+  "answer.modal.delete.title": "문의 답변글 삭제",
+  "answer.modal.delete.detail": "해당 답변을 삭제하시겠습니까?",
+  "answer.modal.select.title": "문의 답변글 작성",
+  "answer.modal.select.detail": "해당 답변을 저장하시겠습니까?",
+
+  "answer.modal.modify.title": "문의 답변글 수정",
+  "answer.modal.modify.detail": "해당 답변을 수정하시겠습니까?",
+
+  "answer.modal.comple.title.02": "문의 답변글 삭제 완료",
+  "answer.modal.comple.type.02": "문의글 답변",
+  "answer.modal.comple.detail.02": "삭제 하였습니다.",
+
+  "answer.modal.comple.title.03": "문의 답변글 등록 완료",
+  "answer.modal.comple.type.03": "문의글 답변",
+  "answer.modal.comple.detail.03": "등록 하였습니다.",
+
+  "answer.modal.comple.title.04": "문의 답변글 수정 완료",
+  "answer.modal.comple.type.04": "문의글 답변",
+  "answer.modal.comple.detail.04": "수정 완료하였습니다.",
+
+  "last": "마지막 라인"
+}
