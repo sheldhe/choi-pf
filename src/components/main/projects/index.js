@@ -28,7 +28,7 @@ const Projects = () => {
               PWA를 실제로 구현해봄으로써 앞으로 웹 생태계가 뻗어나갈 무한한
               가능성과 확장성을 몸소 체감할 수 있었습니다.
             </div>
-            <div class="border-b border-grey-500">
+            <div className="border-b border-grey-500">
               <button>자세히 보기</button>
             </div>
             <div className="flex flex-col pt-4 pb-4">
@@ -77,7 +77,7 @@ const Projects = () => {
               PWA를 실제로 구현해봄으로써 앞으로 웹 생태계가 뻗어나갈 무한한
               가능성과 확장성을 몸소 체감할 수 있었습니다.
             </div>
-            <div class="border-b border-grey-500">
+            <div className="border-b border-grey-500">
               <button>자세히 보기</button>
             </div>
             <div className="flex flex-col pt-4 pb-4">

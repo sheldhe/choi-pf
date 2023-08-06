@@ -13,8 +13,8 @@ const Main = () => {
     <>
       <div className="bg-main01 h-screen w-screen bg-cover max-h-[38rem] flex justify-center pt-20">
         <div className="flex w-full max-w-screen-lg text-white justify-end items-center flex-col">
-          <div className="text-6xl font-nomal mb-4 font-yd">- 최대한 -</div>
-          <div className="text-6xl font-nomal font-yd">
+          <div className="text-5xl font-nomal mb-4 font-yd">- 최대한 -</div>
+          <div className="text-5xl font-nomal font-yd">
             프론트 개발자 포트폴리오
           </div>
           <hr className="w-14 h-1 mx-auto my-4 bg-orange-400 border-0 md:my-9 " />
