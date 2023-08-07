@@ -23,6 +23,18 @@ const Skills = () => {
             </div>
             <div className="mt-8">
               <img src="/img/backend_01.png" alt="backend_01" />
+              <div className="text-center text-4xl pt-2 pb-2 text-neutral-500">
+                PHP
+              </div>
+              <div className="text-center text-4xl pt-2 pb-2 text-neutral-500">
+                C#
+              </div>
+              <div className="text-center text-4xl pt-2 pb-2 text-neutral-500">
+                JAVA
+              </div>
+              {/* <img src="/img/backend_02.png" alt="backend_02" />
+              <img src="/img/backend_03.png" alt="backend_03" />
+              <img src="/img/backend_04.png" alt="backend_04" /> */}
               {/* <img src="/img/backend.png" alt="backend" /> */}
             </div>
           </div>
