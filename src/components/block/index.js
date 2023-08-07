@@ -1,5 +1,6 @@
 import React from "react";
 
+//Todo : 리팩토링
 const pageChecker = {
   main: "aboutme",
   "About Me": "skills",
@@ -11,7 +12,6 @@ const pageChecker = {
 //react-scroll 타켓
 const Block = ({ title }) => {
   const viewData = pageChecker[title];
-  console.log(viewData);
   return <div className="h-[4.75rem] w-full" id={viewData}></div>;
 };
 

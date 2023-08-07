@@ -12,13 +12,13 @@ const Main = () => {
   return (
     <>
       <div className="bg-main01 h-screen w-screen bg-cover max-h-[38rem] flex justify-center pt-20">
-        <div className="flex w-full max-w-screen-lg text-white justify-end items-center flex-col">
-          <div className="text-5xl font-nomal mb-4 font-yd">- 최대한 222-</div>
-          <div className="text-5xl font-nomal font-yd">
+        <div className="flex w-full max-w-screen-lg text-white justify-end items-center flex-col  md:pl-0 md:pr-0  pl-2 pr-2 ">
+          <div className="font-nomal mb-2 md:mb-4 font-yd md:text-5xl text-3xl ">- 최대한 -</div>
+          <div className="font-nomal font-yd md:text-5xl text-3xl text-center">
             프론트 개발자 포트폴리오
           </div>
           <hr className="w-14 h-1 mx-auto my-4 bg-orange-400 border-0 md:my-9 " />
-          <div className="text-center text-xl text-zinc-100 mb-8 leading-8 font-gy">
+          <div className="text-center  md:text-xl text-lg  text-zinc-100 mb-8 leading-8 font-gy">
             안녕하세요.
             <br />
             풀 스택 개발을 하고싶어서 항상 노력하는 웹 개발자입니다. <br />

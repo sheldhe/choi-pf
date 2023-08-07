@@ -2,7 +2,7 @@ import React from "react";
 
 const Career = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-12">
       <div className="flex justify-center flex-row items-start">
         <div className="w-4/12 flex justify-center">
           <div className="bg-com_md bg-cover w-60 h-60 rounded-full bg-red-100 bg-center border"></div>
@@ -19,27 +19,31 @@ const Career = () => {
               건강을 위한 맞춤형 솔루션을 제안합니다
             </div>
             <div className="text-base font-gy  pb-4 mb-4 border-b border-slate-400">
-              기본적으로는 Django 기반의 풀 스택 웹 개발을 총괄 담당하고 있으며,
-              신규 기술 스택(Next.js 등)과 관련한 개발 및 교육까지 전담하고
-              있습니다. 또한, 주로 복잡하고 어려운 작업에 관한 기술 검토를 통해
-              기획을 보조하며, 동료 개발자의 작업에 대한 코드 리뷰나 신입
-              개발자의 사수 역할과 같은 기타 업무까지 함께 담당하고 있습니다.
+              기본적으로 React 기반의 프론트엔드 사이트 제작 및 개발과 
+              신규 웹 사이트 개발과 회사내의 리뉴얼 앱과 웹사이트 제작에 참여하여 제작중입니다. 또한 회사에서 서브 프로젝트 제작 의뢰를 받아 사이트 제작 작업을 하였습니다. 
             </div>
             <div className="mb-6 font-gy">
               <div className="mb-2 font-gy">
-                ▎ 백 오피스 및 관리자 사이트 제작 관리 및 각종 기능 개발
+                ▎ 백 오피스 및 관리자 사이트 제작 관리 및 각종 기능 개발 분석
               </div>
               <div className="font-gy text-neutral-400 mb-4">
-                2022년 하반기 ~ 현재
+                2021년 전반기 ~ 현재
               </div>
               <ul className="pl-4 font-gy list-disc ">
                 <li>
-                  유입 흐름 파악을 위한 업무 프로세스 관련 데이터 대규모 연동
-                  (Funnel)
+                 자사 백오피스 사이트 운영 및 제작 작업 
                 </li>
                 <li>
-                  유입 흐름 파악을 위한 업무 프로세스 관련 데이터 대규모 연동
-                  (Funnel)
+                 자사 광고 관리 사이트 운영 및 제작 작업 
+                </li>
+                <li>
+                 자사 커머스 사업 관련 사이트 제작 협조 (고도몰)
+                </li>
+                <li>
+                 자사 홈페이지 전반적인 디자인 수정 및 운영 
+                </li>
+                <li>
+                 자사 앱 프론트 오류 CS 체크 및 수정 
                 </li>
               </ul>
             </div>
@@ -52,17 +56,90 @@ const Career = () => {
               </div>
               <ul className="pl-4 font-gy list-disc ">
                 <li>
-                  유입 흐름 파악을 위한 업무 프로세스 관련 데이터 대규모 연동
-                  (Funnel)
+                 자사 열나요 알고리즘 로직 정리
                 </li>
                 <li>
-                  유입 흐름 파악을 위한 업무 프로세스 관련 데이터 대규모 연동
-                  (Funnel)
+                 자사 열나요 데이터 Case 추출
+                </li>
+                 <li>
+                 자사 열나요 QA 정리
+                </li>
+                <li>
+                 자사 알고리즘 수정 참여
+                </li>
+                <li>
+                 자사 광고 어드민 웹사이트 리뉴얼 프로젝트 참여
+                </li>
+                <li>
+                 자사 어드민 웹사이트 리뉴얼 프로젝트 제작
                 </li>
               </ul>
             </div>
-            <div></div>
+            <div className="mb-6 font-gy">
+              <div className="mb-2 font-gy">
+                ▎ 질병 관련 Shine 프로젝트 참여
+              </div>
+              <div className="font-gy text-neutral-400 mb-4">
+                2021년 전반기 ~ 2023년 전반기
+              </div>
+              <ul className="pl-4 font-gy list-disc ">
+                <li>
+                  SHINE 프로젝트 사이트 제작 및 운영 (그누보드)
+                </li>
+                <li>
+                  SHINE 관리자 사이트 제작 및 운영 (React Js)
+                </li>
+                <li>
+                  SHINE 모바일 앱 프론트 제작 참여 및 유지보수
+                </li>
+              </ul>
+            </div>
           </div>
+           <div className="mb-6 font-gy">
+              <div className="mb-2 font-gy">
+                ▎ 대한 암협회 & 삼성병원 암검진 예방교육 프로젝트 작업
+              </div>
+              <div className="font-gy text-neutral-400 mb-4">
+                2021년 10월 ~ 2022년 08월
+              </div>
+              <ul className="pl-4 font-gy list-disc ">
+                <li>
+                  전립선암,폐암 예방 영상 안내 및 설문조사 사이트 제작
+                </li>
+                <li>
+                  삼성병원 및 암검진협회와 협업으로 연구진행
+                </li>
+              </ul>
+            </div>
+             <div className="mb-6 font-gy">
+              <div className="mb-2 font-gy">
+                ▎ 병원 의사 진료 관리 프로젝트 "돌보다" 참여
+              </div>
+              <div className="font-gy text-neutral-400 mb-4">
+                2021년 01월 ~ 2021년 08월
+              </div>
+              <ul className="pl-4 font-gy list-disc ">
+                <li>
+                  환자 & 의사와의 상담 서비스 Web사이트 제작 참여
+                </li>
+               <li>
+                  병원 모니터링 사이트 관리자 제작
+                </li>
+              </ul>
+            </div>
+             <div className="mb-6 font-gy">
+              <div className="mb-2 font-gy">
+                ▎ 에임메디 상담 플랫폼 프로젝트 참여
+              </div>
+              <div className="font-gy text-neutral-400 mb-4">
+                2021년 01월 ~ 2021년 05월
+              </div>
+              <ul className="pl-4 font-gy list-disc ">
+                <li>
+                  에임메디 상담 플렛폼 리뉴얼 프로젝트 참여 및 사이트 제작 참여 
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
       <div className="pt-8 flex justify-center flex-row items-start">

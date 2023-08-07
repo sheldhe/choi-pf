@@ -12,7 +12,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="pt-12 flex flex-row flex-wrap">
-        <div className="w-4/12 flex flex-row mt-8 ">
+        <div className="md:w-4/12 w-full flex flex-row mt-8 ">
           <div className="flex w-12">
             <div className="flex justify-center items-center bg-orange-50 h-10 w-10 rounded-full">
               <UserIcon className="h-6 w-6 stroke-1" aria-hidden="true" />
@@ -27,7 +27,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/12 flex flex-row mt-8">
+        <div className="md:w-4/12 w-full flex flex-row mt-8">
           <div className="flex w-12">
             <div className="flex justify-center items-center  bg-orange-50 h-10 w-10 rounded-full">
               <CalendarDaysIcon
@@ -42,8 +42,8 @@ const AboutMe = () => {
             </div>
             <div className="font-medium text-lg font-gy">1993. 02. 19</div>
           </div>
-        </div>{" "}
-        <div className="w-4/12 flex flex-row mt-8">
+        </div>
+        <div className="md:w-4/12 w-full flex flex-row mt-8">
           <div className="flex w-12">
             <div className="flex justify-center items-center  bg-orange-50 h-10 w-10 rounded-full">
               <MapPinIcon className="h-6 w-6 stroke-1" aria-hidden="true" />
@@ -58,7 +58,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/12 flex flex-row mt-8">
+        <div className="md:w-4/12 w-full flex flex-row mt-8">
           <div className="flex w-12">
             <div className="flex justify-center items-center  bg-orange-50 h-10 w-10 rounded-full">
               <DevicePhoneMobileIcon
@@ -74,7 +74,7 @@ const AboutMe = () => {
             <div className="font-medium text-lg font-gy">010-7234-7454</div>
           </div>
         </div>
-        <div className="w-4/12 flex flex-row mt-8">
+        <div className="md:w-4/12 w-full flex flex-row mt-8">
           <div className="flex w-12">
             <div className="flex justify-center items-center  bg-orange-50 h-10 w-10 rounded-full">
               <EnvelopeIcon className="h-6 w-6 stroke-1" aria-hidden="true" />
@@ -89,7 +89,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/12 flex flex-row mt-8">
+        <div className="md:w-4/12 w-full flex flex-row mt-8">
           <div className="flex w-12">
             <div className="flex justify-center items-center bg-orange-50 h-10 w-10 rounded-full">
               <FireIcon className="h-6 w-6 stroke-1" aria-hidden="true" />
@@ -104,7 +104,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="mt-20 w-full">
-        <div className="bg-purple-300 pt-4 pb-4 text-center w-full">
+        <div className="bg-purple-300 pt-4 pb-4 text-center w-full p-2">
           <span className="font-gy font-semibold ">
             * 외주 개발 또는 과외/레슨 문의는 위 연락처/이메일로 부탁드립니다.
           </span>

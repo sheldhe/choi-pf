@@ -1,105 +1,272 @@
 import React from "react";
+import {
+ PlayIcon,CheckIcon,CheckBadgeIcon
+} from "@heroicons/react/24/solid";
 
 const Projects = () => {
+  const handleMore = (url)=>{
+    window.open(url, "_blank", "noopener, noreferrer");
+  }
   return (
-    <div className="pt-20 w-full">
-      <div className="bg-white w-full rounded-md p-8 flex justify-center flex-col mb-10">
+    <div className="pt-12 w-full">
+      <div className="bg-white w-full rounded-md md:p-8  pr-4 pl-4 pt-8 pb-8 flex justify-center flex-col mb-10">
         <div className="flex justify-center font-gy font-bold text-3xl mb-4">
           포트폴리오 웹사이트
         </div>
         <div className="flex justify-center text-neutral-500 font-gy text-lg mb-4">
           개인 프로젝트
         </div>
-        <div className="flex justify-center flex-row mt-8 mb-8 w-full">
-          <div className="flex justify-center flex-row w-6/12 pl-8 pr-8">
-            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover"></div>
+        <div className="flex justify-center md:flex-row flex-col mt-8 mb-8 w-full">
+          <div className="flex justify-center flex-row md:w-6/12 w-full pl-8 pr-8">
+            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover bg-no-repeat mb-8"></div>
           </div>
-          <div className="flex justify-center flex-col w-6/12 pl-8 pr-8">
-            <div>
-              노래방을 즐기는 사람의 입장에서 자주 부르는 노래를 간편하게 관리할
-              수 있도록 도와주는 웹사이트입니다. 제 취미가 아이디어의
-              원천이었고, 저와 취미가 같은 사람들에게 도움이 되었으면 하는
-              마음으로 개발했습니다. Firebase 서비스를 처음 사용해봤다는
-              것만으로도 의미가 있었지만, 그 과정에서 OAuth 2.0의 개념을 한 번
-              더 깊게 다지고 NoSQL을 실제로 사용해볼 수 있었다는 점에서 더욱
-              의미가 있었습니다. 최근에 인기가 많은 Tailwind CSS를 처음으로
-              사용해보며 이것의 차별적인 유용성을 느낄 수 있었고, 동시에
-              PostCSS가 무엇인지 배우는 계기도 되었습니다. 이론으로만 알고 있던
-              PWA를 실제로 구현해봄으로써 앞으로 웹 생태계가 뻗어나갈 무한한
-              가능성과 확장성을 몸소 체감할 수 있었습니다.
+          <div className="flex justify-center flex-col md:w-6/12 w-full pl-8 pr-8">
+            <div className="font-gy">
+              <div className="mb-4">
+                <span className="font-semibold">포트폴리오 용도로 제작한 웹사이트</span>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.</div>
+              <div className="mb-8">이미 순수 React로 개발을 완료한 프로젝트였지만 빠르게 포트폴리오를 만들어야하는 상황에 가장빠르게 개발이 가능한 환경으로 FireBase와 Tailwind를 활용하여 7일 이내 개발한 사이트, 반응형을 고려하였고, 문의 하기 기능을 통해 Firebase DB 활용</div>
             </div>
-            <div className="border-b border-grey-500">
-              <button>자세히 보기</button>
+            <div className=" pb-4 border-b border-grey-500 ">
+             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ">
+               <div className="flex items-center" onClick={()=>handleMore("https://github.com/sheldhe/choi-pf")}><span className="font-gy">자세히 보기 &nbsp;</span>
+              <PlayIcon className="h-4 w-4 " /></div>
+            </button>
             </div>
             <div className="flex flex-col pt-4 pb-4">
               <div className="flex flex-row pb-4">
-                <div className="w-28">주요기능</div>
-                <div className="flex-1">
-                  자주 부르는 노래의 가수명 및 제목 기록하기, 간편한 분류를 위해
-                  각 노래에 태깅하기, 노래의 가수명 및 제목으로 검색해 보기,
-                  가수 또는 태그에 따라 분류해 보기
-                </div>
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />주요기능</div></div>
+                  <div className="flex-1">
+                    간단한 자기소개, 인적 사항, 기술 스택, GitHub 및 티스토리 링크, 프로젝트 경험, 업무 경력 소개
+                  </div>
               </div>
-              <div className="flex flex-row">
-                <div className="w-28">주요기능</div>
-                <div className="flex-1">
-                  자주 부르는 노래의 가수명 및 제목 기록하기, 간편한 분류를 위해
-                  각 노래에 태깅하기, 노래의 가수명 및 제목으로 검색해 보기,
-                  가수 또는 태그에 따라 분류해 보기
-                </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />GitHub</div></div>
+                  <div className="flex-1">
+                    <a href="https://github.com/sheldhe/choi-pf" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://github.com/sheldhe/choi-pf</a>
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Url</div></div>
+                  <div className="flex-1">
+                    <a href="https://choipf-2023.web.app/" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://choipf-2023.web.app/</a>
+                    
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Front End</div></div>
+                  <div className="flex-1">
+                    React.js, Tailwind, React Query
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Deployment</div></div>
+                  <div className="flex-1">
+                    Firebase
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div className="bg-white w-full rounded-md md:p-8  pr-4 pl-4 pt-8 pb-8 flex justify-center flex-col mb-10">
+        <div className="flex justify-center font-gy font-bold text-3xl mb-4">
+          열나요 어드민 리뉴얼 관리자
+        </div>
+        <div className="flex justify-center text-neutral-500 font-gy text-lg mb-4">
+          회사 프로젝트
+        </div>
+        <div className="flex justify-center md:flex-row flex-col mt-8 mb-8 w-full">
+          <div className="flex justify-center flex-row md:w-6/12 w-full pl-8 pr-8">
+            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover bg-no-repeat mb-8"></div>
+          </div>
+          <div className="flex justify-center flex-col md:w-6/12 w-full pl-8 pr-8">
+            <div className="font-gy">
+              <div className="mb-4">
+                <span className="font-semibold">포트폴리오 용도로 제작한 웹사이트</span>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.</div>
+              <div className="mb-8">이미 순수 React로 개발을 완료한 프로젝트였지만 빠르게 포트폴리오를 만들어야하는 상황에 가장빠르게 개발이 가능한 환경으로 FireBase와 Tailwind를 활용하여 7일 이내 개발한 사이트, 반응형을 고려하였고, 문의 하기 기능을 통해 Firebase DB 활용</div>
+            </div>
+            <div className=" pb-4 border-b border-grey-500 ">
+             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ">
+               <div className="flex items-center" onClick={()=>handleMore("https://github.com/sheldhe/choi-pf")}><span className="font-gy">자세히 보기 &nbsp;</span>
+              <PlayIcon className="h-4 w-4 " /></div>
+            </button>
+            </div>
+            <div className="flex flex-col pt-4 pb-4">
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />주요기능</div></div>
+                  <div className="flex-1">
+                    간단한 자기소개, 인적 사항, 기술 스택, GitHub 및 티스토리 링크, 프로젝트 경험, 업무 경력 소개
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />GitHub</div></div>
+                  <div className="flex-1">
+                    <a href="https://github.com/sheldhe/choi-pf" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://github.com/sheldhe/choi-pf</a>
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Url</div></div>
+                  <div className="flex-1">
+                    <a href="https://choipf-2023.web.app/" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://choipf-2023.web.app/</a>
+                    
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Front End</div></div>
+                  <div className="flex-1">
+                    React.js, Tailwind, React Query
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Deployment</div></div>
+                  <div className="flex-1">
+                    Firebase
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-white w-full rounded-md p-8 flex justify-center flex-col mb-10">
+      <div className="bg-white w-full rounded-md md:p-8  pr-4 pl-4 pt-8 pb-8 flex justify-center flex-col mb-10">
         <div className="flex justify-center font-gy font-bold text-3xl mb-4">
-          포트폴리오 웹사이트
+          열나요 광고 어드민 관리자 
         </div>
         <div className="flex justify-center text-neutral-500 font-gy text-lg mb-4">
-          개인 프로젝트
+          회사 프로젝트
         </div>
-        <div className="flex justify-center flex-row mt-8 mb-8 w-full">
-          <div className="flex justify-center flex-row w-6/12 pl-8 pr-8">
-            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover"></div>
+        <div className="flex justify-center md:flex-row flex-col mt-8 mb-8 w-full">
+          <div className="flex justify-center flex-row md:w-6/12 w-full pl-8 pr-8">
+            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover bg-no-repeat mb-8"></div>
           </div>
-          <div className="flex justify-center flex-col w-6/12 pl-8 pr-8">
-            <div>
-              노래방을 즐기는 사람의 입장에서 자주 부르는 노래를 간편하게 관리할
-              수 있도록 도와주는 웹사이트입니다. 제 취미가 아이디어의
-              원천이었고, 저와 취미가 같은 사람들에게 도움이 되었으면 하는
-              마음으로 개발했습니다. Firebase 서비스를 처음 사용해봤다는
-              것만으로도 의미가 있었지만, 그 과정에서 OAuth 2.0의 개념을 한 번
-              더 깊게 다지고 NoSQL을 실제로 사용해볼 수 있었다는 점에서 더욱
-              의미가 있었습니다. 최근에 인기가 많은 Tailwind CSS를 처음으로
-              사용해보며 이것의 차별적인 유용성을 느낄 수 있었고, 동시에
-              PostCSS가 무엇인지 배우는 계기도 되었습니다. 이론으로만 알고 있던
-              PWA를 실제로 구현해봄으로써 앞으로 웹 생태계가 뻗어나갈 무한한
-              가능성과 확장성을 몸소 체감할 수 있었습니다.
+          <div className="flex justify-center flex-col md:w-6/12 w-full pl-8 pr-8">
+            <div className="font-gy">
+              <div className="mb-4">
+                <span className="font-semibold">포트폴리오 용도로 제작한 웹사이트</span>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.</div>
+              <div className="mb-8">이미 순수 React로 개발을 완료한 프로젝트였지만 빠르게 포트폴리오를 만들어야하는 상황에 가장빠르게 개발이 가능한 환경으로 FireBase와 Tailwind를 활용하여 7일 이내 개발한 사이트, 반응형을 고려하였고, 문의 하기 기능을 통해 Firebase DB 활용</div>
             </div>
-            <div className="border-b border-grey-500">
-              <button>자세히 보기</button>
+            <div className=" pb-4 border-b border-grey-500 ">
+             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ">
+               <div className="flex items-center" onClick={()=>handleMore("https://github.com/sheldhe/choi-pf")}><span className="font-gy">자세히 보기 &nbsp;</span>
+              <PlayIcon className="h-4 w-4 " /></div>
+            </button>
             </div>
             <div className="flex flex-col pt-4 pb-4">
               <div className="flex flex-row pb-4">
-                <div className="w-28">주요기능</div>
-                <div className="flex-1">
-                  자주 부르는 노래의 가수명 및 제목 기록하기, 간편한 분류를 위해
-                  각 노래에 태깅하기, 노래의 가수명 및 제목으로 검색해 보기,
-                  가수 또는 태그에 따라 분류해 보기
-                </div>
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />주요기능</div></div>
+                  <div className="flex-1">
+                    간단한 자기소개, 인적 사항, 기술 스택, GitHub 및 티스토리 링크, 프로젝트 경험, 업무 경력 소개
+                  </div>
               </div>
-              <div className="flex flex-row">
-                <div className="w-28">주요기능</div>
-                <div className="flex-1">
-                  자주 부르는 노래의 가수명 및 제목 기록하기, 간편한 분류를 위해
-                  각 노래에 태깅하기, 노래의 가수명 및 제목으로 검색해 보기,
-                  가수 또는 태그에 따라 분류해 보기
-                </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />GitHub</div></div>
+                  <div className="flex-1">
+                    <a href="https://github.com/sheldhe/choi-pf" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://github.com/sheldhe/choi-pf</a>
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Url</div></div>
+                  <div className="flex-1">
+                    <a href="https://choipf-2023.web.app/" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://choipf-2023.web.app/</a>
+                    
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Front End</div></div>
+                  <div className="flex-1">
+                    React.js, Tailwind, React Query
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Deployment</div></div>
+                  <div className="flex-1">
+                    Firebase
+                  </div>
               </div>
             </div>
           </div>
         </div>
+        
+      </div>
+      <div className="bg-white w-full rounded-md md:p-8  pr-4 pl-4 pt-8 pb-8 flex justify-center flex-col mb-10">
+        <div className="flex justify-center font-gy font-bold text-3xl mb-4">
+          SHINE 어드민 관리자 
+        </div>
+        <div className="flex justify-center text-neutral-500 font-gy text-lg mb-4">
+          회사 프로젝트
+        </div>
+        <div className="flex justify-center md:flex-row flex-col mt-8 mb-8 w-full">
+          <div className="flex justify-center flex-row md:w-6/12 w-full pl-8 pr-8">
+            <div className="h-64 bg-red-400 bg-pro_web  w-full bg-cover bg-no-repeat mb-8"></div>
+          </div>
+          <div className="flex justify-center flex-col md:w-6/12 w-full pl-8 pr-8">
+            <div className="font-gy">
+              <div className="mb-4">
+                <span className="font-semibold">포트폴리오 용도로 제작한 웹사이트</span>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.</div>
+              <div className="mb-8">이미 순수 React로 개발을 완료한 프로젝트였지만 빠르게 포트폴리오를 만들어야하는 상황에 가장빠르게 개발이 가능한 환경으로 FireBase와 Tailwind를 활용하여 7일 이내 개발한 사이트, 반응형을 고려하였고, 문의 하기 기능을 통해 Firebase DB 활용</div>
+            </div>
+            <div className=" pb-4 border-b border-grey-500 ">
+             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ">
+               <div className="flex items-center" onClick={()=>handleMore("https://github.com/sheldhe/choi-pf")}><span className="font-gy">자세히 보기 &nbsp;</span>
+              <PlayIcon className="h-4 w-4 " /></div>
+            </button>
+            </div>
+            <div className="flex flex-col pt-4 pb-4">
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />주요기능</div></div>
+                  <div className="flex-1">
+                    간단한 자기소개, 인적 사항, 기술 스택, GitHub 및 티스토리 링크, 프로젝트 경험, 업무 경력 소개
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />GitHub</div></div>
+                  <div className="flex-1">
+                    <a href="https://github.com/sheldhe/choi-pf" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://github.com/sheldhe/choi-pf</a>
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Url</div></div>
+                  <div className="flex-1">
+                    <a href="https://choipf-2023.web.app/" target="_blank" rel="noreferrer" className="hover:text-blue-500">https://choipf-2023.web.app/</a>
+                    
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Front End</div></div>
+                  <div className="flex-1">
+                    React.js, Tailwind, React Query
+                  </div>
+              </div>
+              <div className="flex flex-row pb-4">
+                <div className="w-32">
+                  <div className="flex items-center font-semibold"><CheckBadgeIcon className="h-6 w-6 pr-1" />Deployment</div></div>
+                  <div className="flex-1">
+                    Firebase
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   );
