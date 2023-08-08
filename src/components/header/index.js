@@ -1,9 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Header = ({ positionMode }) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const bgColor = positionMode ? "bg-transparent" : "bg-white";
   const texColor = positionMode ? "text-zinc-200" : "text-black";
   const texHoverColor = positionMode
@@ -17,6 +18,7 @@ const Header = ({ positionMode }) => {
   const handleGoHome = () => {
     navigate("/");
   };
+  const mainCheck = location.pathname === "/" ? false : true;
   return (
     <nav
       className={`fixed w-full flex items-center justify-center flex-wrap p-5 ${borerColor} ${bgColor} ${shawdo}`}
@@ -33,47 +35,59 @@ const Header = ({ positionMode }) => {
           </span>
         </div>
         <div className="flex items-center flex-shrink-0 text-white ">
-          <Link
-            to="aboutme"
-            spy={true}
-            smooth={true}
-            className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
-          >
-            About Me
-          </Link>
+          {mainCheck ? (
+            <div
+              className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              onClick={handleGoHome}
+            >
+              Main
+            </div>
+          ) : (
+            <>
+              <Link
+                to="aboutme"
+                spy={true}
+                smooth={true}
+                className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              >
+                About Me
+              </Link>
 
-          <Link
-            to="skills"
-            spy={true}
-            smooth={true}
-            className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
-          >
-            Skills
-          </Link>
-          <Link
-            to="archiving"
-            spy={true}
-            smooth={true}
-            className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
-          >
-            Archiving
-          </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
-          >
-            Projects
-          </Link>
-          <Link
-            to="career"
-            spy={true}
-            smooth={true}
-            className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
-          >
-            Career
-          </Link>
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              >
+                Skills
+              </Link>
+              <Link
+                to="archiving"
+                spy={true}
+                smooth={true}
+                className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              >
+                Archiving
+              </Link>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              >
+                Projects
+              </Link>
+              <Link
+                to="career"
+                spy={true}
+                smooth={true}
+                className={`pl-2 pr-2 ${texColor} cursor-pointer ${texHoverColor}`}
+              >
+                Career
+              </Link>
+            </>
+          )}
+
           <div
             className={`pl-2 pr-2 font-semibold text-orange-600 cursor-pointer hover:text-orange-500`}
             onClick={handlePageGo}

@@ -58,12 +58,15 @@ const Inquiry = () => {
     selectSuccessPop.onChange();
   };
   const handleClose = () => {
+    handleRefre();
+    selectSuccessPop.onChange();
+  };
+  const handleRefre = () => {
     setChecked(false);
     setSelect(radioList[0].key);
     setWriter("");
     setTitle("");
     setContents("");
-    selectSuccessPop.onChange();
   };
 
   return (
@@ -251,6 +254,7 @@ const Inquiry = () => {
               <button
                 type="button"
                 className="px-24 py-4 text-base font-medium text-gray-900  inline-flex items-center bg-white hover:bg-gray-900  hover:text-white focus:outline-none text-center border mr-4"
+                onClick={handleRefre}
               >
                 취소
               </button>
