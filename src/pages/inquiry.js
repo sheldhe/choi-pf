@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import Contents from "components/sub/contents";
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "services/firebase";
-import { Timestamp } from "firebase/firestore";
+import { useAddInquiryMutation } from "services/query/useInquiryQurey";
+import { useInputModal } from "assets/hooks";
+import CompleteModal from "components/modal/complete-modal";
 
 const radioList = [
   { key: "inquiry", name: "문의" },
@@ -15,10 +15,12 @@ const Inquiry = () => {
   const [writer, setWriter] = useState("");
   const [title, setTitle] = useState("");
   const [contents, setContents] = useState("");
+  const { mutate: addInquiry, isLoading, isError } = useAddInquiryMutation();
   const checkInput = useRef();
   const titleInput = useRef();
   const contentsInput = useRef();
   const writerInput = useRef();
+  const selectSuccessPop = useInputModal(false); // 답변 등록 완료팝업
 
   const onChange = (value) => {
     setChecked(value);
@@ -47,22 +49,23 @@ const Inquiry = () => {
       contentsInput.current.focus();
       return false;
     }
-    const timestamp = Timestamp.fromDate(new Date());
-    // console.log(timestamp);
-    try {
-      const docRef = await addDoc(collection(db, "inquiry"), {
-        type: select,
-        writer: writer,
-        title: title,
-        contents: contents,
-        writedate: timestamp,
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-    // alert("1111");
+    addInquiry({
+      select: select,
+      writer: writer,
+      title: title,
+      contents: contents,
+    });
+    selectSuccessPop.onChange();
   };
+  const handleClose = () => {
+    setChecked(false);
+    setSelect(radioList[0].key);
+    setWriter("");
+    setTitle("");
+    setContents("");
+    selectSuccessPop.onChange();
+  };
+
   return (
     <>
       <div className="bg-inquiry01 h-screen w-screen bg-cover max-h-[20rem] flex justify-center pt-20"></div>
@@ -262,6 +265,13 @@ const Inquiry = () => {
           </div>
         </div>
       </Contents>
+      <CompleteModal
+        open={selectSuccessPop.value}
+        onOpen={selectSuccessPop.onChange}
+        onClose={() => handleClose()}
+        isError={isError}
+        isLoading={isLoading}
+      />
     </>
   );
 };
