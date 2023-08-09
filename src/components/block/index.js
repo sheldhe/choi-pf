@@ -12,7 +12,9 @@ const pageChecker = {
 //react-scroll 타켓
 const Block = ({ title }) => {
   const viewData = pageChecker[title];
-  return <div className="h-[4.75rem] w-full" id={viewData}></div>;
+  return (
+    <div className="md:h-[4.75rem] h-[3.75rem] w-full" id={viewData}></div>
+  );
 };
 
 export default Block;

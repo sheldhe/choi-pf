@@ -82,11 +82,11 @@ const Inquiry = () => {
           <div className="flex flex-col mb-8">
             <div className="flex flex-col">
               <div className="flex flex-row justify-between items-center ">
-                <div className="font-semibold text-2xl font-gy">
+                <div className="font-semibold md:text-2xl text-xl font-gy">
                   개인정보 수집 및 이용에 대한 동의&nbsp;
-                  <span className="text-orange-500 text-2xl">˙</span>
+                  <span className="text-orange-500 text-xl md:text-2xl">˙</span>
                 </div>
-                <div className="text-base font-semibold font-gy text-orange-500">
+                <div className="md:block hidden text-base font-semibold font-gy text-orange-500">
                   * 필수입력
                 </div>
               </div>
@@ -148,13 +148,13 @@ const Inquiry = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row justify-between">
+              <div className="flex md:flex-row flex-col justify-between">
                 <div className="text-base font-semibold">
                   위의&nbsp;
                   <span className="text-orange-500">개인정보 수집 및 이용</span>
                   에 동의하십니까?
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center md:justify-center justify-end">
                   <input
                     ref={checkInput}
                     id="orange-checkbox"
@@ -253,14 +253,14 @@ const Inquiry = () => {
             <div className="flex flex-row mt-16 mb-20 justify-center">
               <button
                 type="button"
-                className="px-24 py-4 text-base font-medium text-gray-900  inline-flex items-center bg-white hover:bg-gray-900  hover:text-white focus:outline-none text-center border mr-4"
+                className="md:px-24 px-14 py-4 text-base font-medium text-gray-900  inline-flex items-center bg-white hover:bg-gray-900  hover:text-white focus:outline-none text-center border mr-4"
                 onClick={handleRefre}
               >
                 취소
               </button>
               <button
                 type="button"
-                className="px-24 py-4 text-base font-medium text-white inline-flex items-center bg-gray-900 hover:bg-orange-600  focus:outline-none text-center border"
+                className="md:px-24 px-14 py-4 text-base font-medium text-white inline-flex items-center bg-gray-900 hover:bg-orange-600  focus:outline-none text-center border"
                 onClick={handleWrite}
               >
                 작성
