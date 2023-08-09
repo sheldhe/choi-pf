@@ -32,10 +32,6 @@ const Skills = () => {
               <div className="text-center text-4xl pt-2 pb-2 text-neutral-500">
                 JAVA
               </div>
-              {/* <img src="/img/backend_02.png" alt="backend_02" />
-              <img src="/img/backend_03.png" alt="backend_03" />
-              <img src="/img/backend_04.png" alt="backend_04" /> */}
-              {/* <img src="/img/backend.png" alt="backend" /> */}
             </div>
           </div>
           <div className="bg-white w-full rounded-xl p-8 mt-8">
@@ -53,12 +49,11 @@ const Skills = () => {
             <div className="mt-8">
               <img src="/img/deployment_01.png" alt="deployment_01" />
               <img src="/img/backend_01.png" alt="deployment_02" />
-              {/* <img src="/img/deployment.png" alt="deployment" /> */}
             </div>
           </div>
         </div>
-        <div className="md:w-4/12 w-full flex justify-center flex-col pl-6">
-          <div className="bg-white w-full rounded-xl p-8">
+        <div className="md:w-4/12 w-full flex justify-center flex-col  mt-8 pl-6 pr-6 md:pl-6  md:mt-0">
+          <div className="bg-white w-full rounded-xl p-8  md:pl-6 pl-0 ">
             <div className="text-2xl font-semibold pb-2 border-b border-grey-500">
               Version Control
             </div>
